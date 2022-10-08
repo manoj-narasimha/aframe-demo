@@ -11,15 +11,22 @@
     <a-scene>
         <a-sky color="#DDDDDD"></a-sky>
         <a-box color="#0095DD" position="1 1 0" rotation="0 0 0"></a-box>
-        <a-camera
+        <!-- <a-camera
             position="0 1 4"
             cursor-visible="true"
             cursor-scale="2"
             cursor-color="#0095DD"
             cursor-opacity="0.5">
-        </a-camera>
-        <a-entity camara look-controls
-            cursor="fuse: true;
+        </a-camera> -->
+        <a-entity camera look-controls>
+            <a-entity cursor="fuse: true; fuseTimeout: 500"
+                position="0 0 -1"
+                geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+                material="color: black; shader: flat">
+            </a-entity>
+        </a-entity>
+        <a-entity id="box" cursor-listener geometry="primitive: box" material="color: blue"></a-entity>
+        <a-entity
             geometry="
                 primitive: torus;
                 radius: 1;
