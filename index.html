@@ -18,7 +18,7 @@
             cursor-color="#0095DD"
             cursor-opacity="0.5">
         </a-camera>
-        <a-entity
+        <!-- <a-entity
             geometry="
                 primitive: torus;
                 radius: 1;
@@ -30,10 +30,14 @@
             metalness: 1;"
             rotation="10 0 0"
             position="-3 1 0">
-        </a-entity>
-        <a-entity daydream-controls></a-entity>
-        <a-entity daydream-controls="hand: left"></a-entity>
-        <a-entity daydream-controls="hand: right"></a-entity>
+        </a-entity> -->
+        <!-- <a-assets>
+            <a-asset-item id="tree" src="./banana.gltf"></a-asset-item>
+        </a-assets> -->
+        <a-entity id="leftHand" hand-controls="hand: left; handModelStyle: lowPoly; color: #ffcccc"></a-entity>
+        <a-entity id="rightHand" hand-controls="hand: right; handModelStyle: lowPoly; color: #ffcccc"></a-entity>
+
+        <!-- <a-entity gltf-model="#tree"></a-entity> -->
     </a-scene>
     <script src="./script.js"></script>
 </body>
