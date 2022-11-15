@@ -9,36 +9,12 @@
 </head>
 <body>
     <a-scene>
-        <a-sky color="#DDDDDD"></a-sky>
-        <a-box color="#0095DD" position="1 1 0" rotation="0 0 0"></a-box>
-        <a-camera
-            position="0 1 4"
-            cursor-visible="true"
-            cursor-scale="2"
-            cursor-color="#0095DD"
-            cursor-opacity="0.5">
-        </a-camera>
-        <!-- <a-entity
-            geometry="
-                primitive: torus;
-                radius: 1;
-                radiusTubular: 0.1;
-                segmentsTubular: 64;"
-            material="
-            color: #EAEFF2;
-            roughness: 0.5;
-            metalness: 1;"
-            rotation="10 0 0"
-            position="-3 1 0">
-        </a-entity> -->
-        <!-- <a-assets>
-            <a-asset-item id="tree" src="./banana.gltf"></a-asset-item>
-        </a-assets> -->
-        <a-entity id="leftHand" hand-controls="hand: left; handModelStyle: lowPoly; color: #ffcccc"></a-entity>
-        <a-entity id="rightHand" hand-controls="hand: right; handModelStyle: lowPoly; color: #ffcccc"></a-entity>
+      <a-sky src="sphere.jpg" rotation="0 -130 0"></a-sky>
 
-        <!-- <a-entity gltf-model="#tree"></a-entity> -->
+      <a-text font="kelsonsans" value="Puy de Sancy, France" width="6" position="-2.5 0.25 -1.5"
+        rotation="0 15 0"></a-text>
     </a-scene>
-    <script src="./script.js"></script>
+        
+    <!-- <script src="./script.js"></script> -->
 </body>
 </html>
