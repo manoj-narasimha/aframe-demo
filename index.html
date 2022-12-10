@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width, shrink-to-fit=no">
-    <title>Panolens.js Development Example</title>
+    <title>Amrita Campus Tour</title>
     <style>
       html, body {
         margin: 0;
@@ -57,11 +57,11 @@
       var panorama1, panorama2, viewer;
 
       // panorama1 = new PANOLENS.GoogleStreetviewPanorama( 'y0rbkep4RBcAAAQqZe0GiQ' );
-      panorama1 = new PANOLENS.ImagePanorama( './images/scene1.jpg' );
+      panorama1 = new PANOLENS.ImagePanorama( './images/sphere3.jpg' );
 
-      panorama2 = new PANOLENS.ImagePanorama( './images/scene2.jpeg' );
+      panorama2 = new PANOLENS.ImagePanorama( './images/sphere4.jpg' );
 
-      panorama3 = new PANOLENS.ImagePanorama( './images/sphere0.jpg' );
+      panorama3 = new PANOLENS.GoogleStreetView( 'https://goo.gl/maps/H1VHka3FrXsSfdMg6' );
 
       viewer = new PANOLENS.Viewer();
       viewer.add( panorama1 );
